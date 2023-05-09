@@ -3,13 +3,13 @@ function patterns(){
     season = prompt("Choose a season: \n 1: Fall/Winter \n 2: Spring/Summer \n 3: Cancel");
   
 
-    if(garment === "1" && season === "1"){
+if(garment === "1" && season === "1"){
         alert("You choose Fall/Winter sweaters tap Continue to see test calls for amazing patterns")
-  }else if (garment === "1" && season === "2"){
+}else if (garment === "1" && season === "2"){
         alert("You choose Spring/Summer sweaters tap Continue to see test calls for amazing patterns")
-  }else if (garment === "2" && season === "1"){
+}else if (garment === "2" && season === "1"){
     alert("You choose Fall/Winter cardigans tap Continue to see test calls for amazing patterns")
-  }else if (garment === "2" && season === "2"){
+}else if (garment === "2" && season === "2"){
     alert("You choose Spring/Summer cardigans tap Continue to see test calls for amazing patterns")
 } else if (garment === "3" || season === "3"){
     alert("We are sad to see you go")
