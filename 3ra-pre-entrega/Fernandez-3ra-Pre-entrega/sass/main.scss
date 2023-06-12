@@ -1,0 +1,101 @@
+
+@import "index";
+@import "patterns";
+@import "videos";
+@import "contact";
+@import "about";
+
+
+/* variables */
+$gradientPink: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+$regularWhite: white;
+$regularBlack: black;
+
+/* estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 300px;
+    align-items: center;
+}
+
+p {
+    font-family: 'bold', sans-serif;
+    size: 100;
+
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    color: gray;
+}
+
+@keyframes miEfecto{
+    0% {
+        background-color: pink;
+        width: 150px;
+    } 
+    50% {
+        background-color: #FF99AC;
+        width: 100x;
+    }
+    100% {
+        background-color: #FF9A8B;
+        width: 180px;
+    } 
+}
+
+
+/* footer */
+.foot {
+    text-align: center;
+    padding: 5px;
+    justify-content: center;
+    background-color: #ededed;
+    background-image: linear-gradient(180deg, #ededed 0%, #f3f3f3 100%);
+    margin-top: 20px;
+    img {
+        &:hover {
+            filter: drop-shadow(2px 4px 6px grey);
+        }
+    }
+    p {
+        font-size: small;
+    }
+    a {
+        padding: 5px;
+    }
+    .copy-right {
+        margin-top: 15px;
+        font-size: small;
+        color: grey;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+/* home */
+@media (max-width: 600px) {
+    #grid-galeria {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    #siteIntro {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* about */
+@media (max-width: 500px) {
+    #about {
+        grid-template-columns: 1fr
+    }
+}

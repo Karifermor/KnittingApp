@@ -1,0 +1,193 @@
+#siteIntro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    font-family: sans-serif;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 5px;
+    border-radius: 2px;
+}
+#siteIntro .infoIntro h1 {
+    color: white;
+}
+#siteIntro .infoIntro p {
+    padding: 20px 5px;
+}
+#siteIntro .introImg img {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+    border-radius: 4px;
+}
+.btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 8px;
+}
+#siteintro .infoIntro .infoBtn {
+    display: flex;
+}
+@media (max-width: 500px) {
+    #siteIntro {
+        grid-template-columns: 1fr;
+    }
+}
+.boxAbout {
+    padding: 40px 40px;
+    position: relative;
+}
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    font-family: sans-serif;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 5px;
+    border-radius: 2px;
+}
+#about .infoIntro h1 {
+    color: white;
+}
+#about .introImg img {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+    border-radius: 4px;
+}
+#about .top-content {
+    display: flex;
+}
+@media (max-width: 500px) {
+    #about {
+        grid-template-columns: 1fr;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    width: 300px;
+    align-items: center;
+}
+p {
+    font-family: 'bold', sans-serif;
+    size: 100;
+
+}
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    color: gray;
+}
+.top-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px auto;
+    background-color: #ffe4ef;
+    padding: 10px;
+    display: flex;
+    position: relative;
+
+}
+.img-content {
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.video {
+    padding: 10px;
+}
+.video:hover {
+    filter: drop-shadow(2px 4px 6px grey);
+}
+div.boxModel {
+    background-color: rgb(254, 254, 254);
+    text-align: center;
+    position: relative;
+    margin: 10px;
+}
+.formulario {
+    margin-bottom: 30px;
+}
+.div-contact {
+    margin: 10px;
+    align-items: center;
+}
+.foot {
+    text-align: center;
+
+    padding: 5px;
+    justify-content: center;
+    background-color: #ededed;
+    background-image: linear-gradient(180deg, #ededed 0%, #f3f3f3 100%);
+    margin-top: 20px;
+}
+.foot img:hover {
+    filter: drop-shadow(2px 4px 6px grey);
+}
+.foot .p {
+    font-size: small;
+}
+.foot .copy-right {
+    margin-top: 15px;
+    font-size: small;
+    color: grey;
+}
+.foot a {
+    padding: 5px;
+}
+.patterns {
+    padding: 10px;
+}
+.patterns:hover {
+    filter: drop-shadow(2px 4px 6px grey);
+}
+
+.imgGallery {
+    background-color: rgb(254, 254, 254);
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.imgGallery p {
+    margin: 5px;
+}
+.imgGallery img {
+    margin-top: 5px;
+}
+.ig:hover {
+    filter: drop-shadow(2px 4px 6px grey);
+}
+#grid-galeria {
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    max-width: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+#grid-galeria img {
+    width: 100%;
+    height: 0 auto;
+}
+#grid-galeria img:hover {
+    filter: drop-shadow(2px 4px 6px grey);
+}
+@media (max-width: 800px) {
+    #grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.btn-shop {
+    margin: 10px;
+}

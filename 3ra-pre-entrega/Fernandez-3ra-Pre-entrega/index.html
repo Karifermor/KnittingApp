@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Find beautiful knitting and crochet patterns for test.">
+    <meta name="keywords" content="patterns, tutorial, DIY, knitting, crochet, handmade, vest, sweater">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Noto+Serif&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Noto+Serif&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <title>KNITK APP</title>
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <!--    <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./sass/main.css">
+
+    <!-- sweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <section id="siteIntro">
+        <div class="infoIntro">
+            <h1>A test knitting call App</h1>
+            <p>Test knitting is a process in which knitters receive an unpublished pattern from the designer to test out the instructions, finish the project before the due date, look for any errors and provide helpful feedback.</p>
+            <p>Search for a pattern or publish yours and find the best test knitters.</p>
+            <div class="infoBtn">
+                <a href="https://www.etsy.com/shop/KnitkstoreByKari?ref=shop-header-name&listing_id=847310214"
+                    role="button" type="button" class="btn btn-dark" target="_blank">START NOW</a>
+            </div>
+        </div>
+        <div class="introImg">
+            <img src="./images/img-needles.png" alt="person wearing the Guacamole vest in green" width="300">
+        </div>
+    </section>
+
+
+    <div class="boxModel">
+        <h2>PATTERNS YOU MAY LIKE</h2>
+        <img class="patterns" src="./images/img-27.JPG"
+            alt="The Sugar sweater. A super sluffy and pink mohair sweater." width="400"> 
+        <img class="patterns" src="./images/img-29.JPG" alt="The viena vest with a lot of cables in white and mustard."
+            width="400">
+        <img class="patterns" src="./images/img-30.JPG" alt="The Musgo sweater in green" width="400">
+    </div>
+
+
+    <form class="container infoBtn" id="btnChoice">
+        <h5>APPLY FOR A PATTERN</h5>
+        <input id="inputChoice" type="text" class="form-control"  placeholder="Enter a pattern name (sugar, viena or musgo)">
+        <div class="container-form">
+            <button id="submitBtn" type="submit" class="btn btn-dark">APPLY</button>
+        </div>
+
+    </form>
+
+
+    
+    <form class="container" id="formulario">
+        <h5>CONTACT INFO</h5>
+        <label for="Nombre y Apellido"></label>
+        <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+
+
+        <label for="Correo Electronico"></label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your Email">
+
+        <div id="btnForm" class="container-form">
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+
+    </form>
+
+
+    <footer>
+        <div class="foot">
+            <div>
+                <p>Let's Keep In Touch!</p>
+            </div>
+            <a class="socials" href="https://www.instagram.com/k.nit.k/" target="_blank"><img
+                    src="./icons/instagram.svg"></a>
+            <a class="socials" href="https://www.pinterest.es/Knitkbykari/" target="_blank"><img
+                    src="./icons/pinterest.svg"></a>
+            <a class="socials" href="https://www.youtube.com/channel/UCzZy8Qj-j_krvMWW7o1SQYg" target="_blank"><img
+                    src="./icons/youtube.svg"></a>
+            <a class="socials" href="https://www.facebook.com/profile.php?id=100063835666134" target="_blank"><img
+                    src="./icons/facebook.svg"></a>
+
+            <p class="copy-right"> © Copyright 2023 KNITK</p>
+        </div>
+    </footer>
+
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

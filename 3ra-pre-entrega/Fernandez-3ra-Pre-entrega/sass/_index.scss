@@ -1,0 +1,100 @@
+/* mixin */
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+/* variables */
+$gradientPink: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+$regularWhite: white;
+$regularBlack: black;
+
+#siteIntro {
+    background-color: #FF9A8B;
+    background-image: $gradientPink;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    font-family: sans-serif;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 5px;
+    border-radius: 2px;
+
+    .infoIntro {
+        color: $regularWhite;
+        padding: 20px 5px;
+        h1 {
+            color: $regularWhite;
+        }
+        p {
+            padding: 20px 5px;
+            color: $regularBlack;
+        }
+        .infoBtn {
+            display: flex;
+            .btn {
+                background-color: $regularBlack;
+                color: $regularWhite;
+                text-decoration: none;
+                padding: 5px;
+                border-radius: 8px;
+                &:hover {
+                    filter: drop-shadow(2px 4px 6px pink);
+                }
+            }
+        }
+    }
+
+    .introImg {
+        img {
+            @include sizes(90%, auto);
+            margin: 20px;
+            border-radius: 4px;
+            &:hover {
+                transform: rotate(10deg);
+            }
+        }
+
+    }
+}
+
+main {
+    #grid-galeria {
+        display: grid;
+        gap: 5px;
+        /*   width: 100%; */
+        height: auto;
+        max-width: 900px;
+        grid-template-columns: repeat(2, 1fr);   
+        margin: auto;
+        padding: 10px;
+        width: 90%;
+        img {
+            @include sizes(100%, auto);
+            &:hover {
+                filter: drop-shadow(2px 4px 6px grey);
+            }
+        }
+    }
+}
+
+.imgGallery {
+    background-color: rgb(254, 254, 254);
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    p {
+        margin: 5px;
+    }
+    img {
+        margin-top: 5px;
+        &:hover {
+            filter: drop-shadow(2px 4px 6px grey);
+        }
+    }
+}
+
+
