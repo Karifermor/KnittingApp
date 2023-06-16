@@ -51,8 +51,8 @@ function applyFunction(e){
         buttonsStyling: false
       })
           swalWithBootstrapButtons.fire(
-            'Succes!',
-            'You have applied.',
+            'Succes! You have applied for',
+            `${inputChoice.value} pattern`,
             'success'
           )      
 }
